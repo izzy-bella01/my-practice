@@ -37,18 +37,14 @@
 
     function sumOfStrings(string) {
         var stringArr = string.split('');
-        var reducer = (previousValue, currentValue) => previousValue + currentValue;
 
-        return stringArr.reduce(reducer);
-    }
-
-    console.log(sumOfStrings("1234"));
-
-    function sumStr(str){
-        let strArr = str.split(",");
-        let sum = strArr.reduce(function(total, num){
+        var sum = stringArr.reduce(function(total, num) {
             return parseFloat(total) + parseFloat(num);
         });
 
         return sum;
     }
+
+    console.log(sumOfStrings("1234"));
+
+
