@@ -44,3 +44,11 @@
 
     console.log(sumOfStrings("1234"));
 
+    function sumStr(str){
+        let strArr = str.split(",");
+        let sum = strArr.reduce(function(total, num){
+            return parseFloat(total) + parseFloat(num);
+        });
+
+        return sum;
+    }
