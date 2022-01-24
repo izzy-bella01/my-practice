@@ -26,4 +26,21 @@
         }
     }
 
-    console.log(findNeedle());;
+    console.log(findNeedle());
+
+// 01-24-2022
+
+    // PROBLEM:  write a function that accepts a string of numbers and returns the sum of those numbers
+    // INPUT 1: "42958372" --- EXPECTED OUTPUT 1: 40
+    // INPUT 2: "917485"      --- EXPECTED OUTPUT 2: 34
+
+
+    function sumOfStrings(string) {
+        var stringArr = string.split('');
+        var reducer = (previousValue, currentValue) => previousValue + currentValue;
+
+        return stringArr.reduce(reducer);
+    }
+
+    console.log(sumOfStrings("1234"));
+
