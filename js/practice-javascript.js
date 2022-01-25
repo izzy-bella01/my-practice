@@ -35,16 +35,35 @@
     // INPUT 2: "917485"      --- EXPECTED OUTPUT 2: 34
 
 
-    function sumOfStrings(string) {
-        var stringArr = string.split('');
+    // function sumOfStrings(string) {
+    //     var stringArr = string.split('');
+    //
+    //     var sum = stringArr.reduce(function(total, num) {
+    //         return parseFloat(total) + parseFloat(num);
+    //     });
+    //
+    //     return sum;
+    // }
+    //
+    // console.log(sumOfStrings("1234"));
 
-        var sum = stringArr.reduce(function(total, num) {
-            return parseFloat(total) + parseFloat(num);
-        });
+// 01-25-2022
 
-        return sum;
+    // Tuesday Morning Warmup
+    // Write a function that finds duplicates, or repeating numbers consecutively in a string of numbers, and returns an object that shows how many times any repeating number is shown
+    // INPUT: “42992338111134”
+    // EXPECTED OUTPUT: {9: 2, 3: 2, 1: 4}
+
+    // var stringOfNum = '12334567784312';
+
+    function stringOfNum (string) {
+        var duplicate = {};
+        var count = 0
+        for(var i = 0; i <= string.length; i++) {
+
+        }
+
     }
-
-    console.log(sumOfStrings("1234"));
+    stringOfNum('122334');
 
 
