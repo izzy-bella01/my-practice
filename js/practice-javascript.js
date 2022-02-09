@@ -82,6 +82,25 @@
     }, [])
     console.log(noDupArray);
 
+// 02-09-2022
 
+    // Wednesday Morning Warmup:
+    // write a function that takes a string as argument and returns the number of vowels contained in that string.
+    // The vowels are “a”, “e”, “i”, “o”, “u”.
+    // input: "helicopter"
+    // output: 4
+    // reason: there are 4 vowels in the input word helicopter
 
+    function howManyVowels(string) {
+        let vowels = "aeiouAEIOU";
+        let count = 0;
+        for(let i = 0; i < string.length; i++) {
+            if(vowels.indexOf(string[i]) !== -1) {
+                count++
+            }
+        }
+        return count
+    }
+
+    console.log(howManyVowels("bananas"));
 
