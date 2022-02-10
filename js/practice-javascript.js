@@ -104,3 +104,26 @@
 
     console.log(howManyVowels("bananas"));
 
+// 02-10-2022
+
+    // Thursday Morning Warmup
+    // write a function that counts the number of duplicate characters.
+    // example input: "adsjfdsfsfjsdjfhacabcsbajda"
+    // expected output: { a: 5, b: 2, c: 2, d: 4, f: 4, j: 4, s: 5 }
+
+function dupChars(string) {
+    if(string) {
+        let emptyObj = {};
+        for(let i = 0; i < string.length; i++) {
+            if(emptyObj[string[i]]) {
+                 emptyObj[string[i]] += 1;
+            } else {
+                 emptyObj[string[i]] = 1;
+            }
+        }
+        console.log(emptyObj)
+    }
+}
+
+console.log(dupChars("isabellaaa"));
+
